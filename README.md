@@ -4,7 +4,7 @@ This repository is a set of scripts that will allow you easily install the lates
 
 **Please do use a clean CentOS system, the script installs all necesary tools and packages including Ansible, container runtime, etc.**
 
-## preparation
+## Preparation
 
 1. Install Certbot
 
