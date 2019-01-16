@@ -6,20 +6,21 @@ This repository is a set of scripts that will allow you easily install the lates
 
 ## preparation
 
-1. Install Cerbot
+1. Install Certbot
 
 ```
-yum -y install epel-release cerbot
+yum -y install epel-release 
+yum -y install certbot
 ```
 
 2. Generate Certificates for console.$DOMAIN and *.apps.$DOMAIN
 
 ```
 certbot certonly --manual --preferred-challenges dns \
-  -d console.$DOMAIN
+  -d console.<Your Domain>
 
 certbot certonly --manual --preferred-challenges dns \
-  -d apps.$DOMAIN -d *.apps.$DOMAIN
+  -d apps.<Your Domain> -d *.apps.<Your Domain>
 ```
 
 ## Installation
