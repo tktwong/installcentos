@@ -11,6 +11,8 @@ This repository is a set of scripts that will allow you easily install the lates
 ```
 yum -y install epel-release 
 yum -y install certbot
+or
+yum -y --enablerepo=epel install certbot
 ```
 
 2. Generate Certificates for console.<domain> and *.apps.<domain>
