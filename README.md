@@ -13,14 +13,14 @@ yum -y install epel-release
 yum -y install certbot
 ```
 
-2. Generate Certificates for console.$DOMAIN and *.apps.$DOMAIN
+2. Generate Certificates for console.<domain> and *.apps.<domain>
 
 ```
 certbot certonly --manual --preferred-challenges dns \
-  -d console.<Your Domain>
+  -d console.<domain>
 
 certbot certonly --manual --preferred-challenges dns \
-  -d apps.<Your Domain> -d *.apps.<Your Domain>
+  -d apps.<domain> -d *.apps.<domain>
 ```
 
 ## Installation
